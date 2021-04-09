@@ -304,6 +304,12 @@ h3 {
   transition: color var(--animation), background-color var(--animation);
 }
 
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--main-white-color);
+}
+
 .hero-button.button {
   min-width: 200px;
   margin-top: 30px;
@@ -321,12 +327,6 @@ h3 {
   background-color: var(--accent-color);
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-white-color);
-}
-
 .list .button {
   min-width: 73px;
   left: 876px;
@@ -341,7 +341,8 @@ h3 {
 }
 
 .list-button .button {
-  transition: box-shadow var(--animation);
+  transition: box-shadow var(--animation), color var(--animation),
+    background-color var(--animation);
 }
 
 .list-button .button:hover,
@@ -754,11 +755,12 @@ address {
   position: absolute;
   top: 0;
   right: 0;
-
-  border: none;
   padding: 10px;
   margin: 8px;
+
+  border: none;
   cursor: pointer;
+
   transition: fill var(--animation);
 }
 
