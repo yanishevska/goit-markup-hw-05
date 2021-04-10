@@ -251,14 +251,16 @@ h3 {
   text-align: center;
 }
 
-.section-hero {
-  display: flex;
+.section-hero .hero-container {
+  display: block;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.section-hero .hero-container {
+.section-hero {
+  background-color: var(--dark-bg-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -268,13 +270,11 @@ h3 {
 
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 1600px;
-  background-color: var(--dark-bg-color);
-  display: block;
+  background-size: 1600px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   text-align: -webkit-center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -463,6 +463,10 @@ h3 {
 
 .social-icons {
   display: inline-flex;
+}
+
+.social-icons-item .icon {
+  fill: var(--main-white-color);
 }
 
 .social-icons-item + .social-icons-item {
@@ -760,6 +764,11 @@ address {
 
   border: none;
   cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
 
   transition: fill var(--animation);
 }
