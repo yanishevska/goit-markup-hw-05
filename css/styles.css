@@ -465,7 +465,7 @@ h3 {
   display: inline-flex;
 }
 
-.social-icons-item .icon {
+.social-icons-item .icons-footer {
   fill: var(--main-white-color);
 }
 
